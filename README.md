@@ -15,7 +15,7 @@ GitHub-repo-reader is a Spring Boot application that allows users to fetch and v
 ## Setup
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/github-repo-branch-viewer.git
+   git clone https://github.com/Gwynnbleidd11/git-hub-user-repository-reader.git   
    cd github-repo-branch-viewer
 
 2. Build the project
