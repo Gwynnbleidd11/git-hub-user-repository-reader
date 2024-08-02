@@ -23,23 +23,4 @@ public class GitHubService {
                                 .collect(Collectors.toList())))
                 .collect(Collectors.toList());
     }
-
-
-//    public List<RepoResponse> getRepositories(final String username) {
-//        return gitHubClient.getGitHubRepositories(username).stream().map(r -> {
-//            var branches = gitHubClient.getRepositoryBranches(username, r.getName());
-//            var branchResponses = branches.stream().map(b ->
-//                    BranchResponse.builder()
-//                            .name(b.getName())
-//                            .sha(b.getCommit().getSha())
-//                            .build()
-//            ).collect(Collectors.toList());
-//
-//            return RepoResponse.builder()
-//                    .name(r.getName())
-//                    .ownerName(r.getOwner().getLogin())
-//                    .branchList(branchResponses)
-//                    .build();
-//        }).collect(Collectors.toList());
-//    }
 }

@@ -4,11 +4,13 @@ import com.example.githubreporeader.request_response.BranchResponse;
 import com.example.githubreporeader.request_response.RepositoryResponse;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
+@Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RepositoryResponseDto {
 
@@ -25,5 +27,4 @@ public class RepositoryResponseDto {
                 .branchList(branchResponses)
                 .build();
     }
-
 }

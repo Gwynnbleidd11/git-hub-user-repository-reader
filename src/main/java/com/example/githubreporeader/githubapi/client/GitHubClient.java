@@ -3,6 +3,7 @@ package com.example.githubreporeader.githubapi.client;
 import com.example.githubreporeader.githubapi.domain.RepositoryResponseDto;
 import com.example.githubreporeader.githubapi.domain.BranchResponseDto;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Service
+@Setter
 @RequiredArgsConstructor
 public class GitHubClient {
 
@@ -40,5 +42,4 @@ public class GitHubClient {
                 .encode()
                 .toUri();
     }
-
 }
